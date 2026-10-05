@@ -1,11 +1,5 @@
 # DSAN 6725 Final Project Proposal
 
-<!--
-A worked example, not a submission. It shows the level of detail a proposal needs, and
-CI validates it alongside the real ones, which proves the rules are satisfiable. Do
-not edit this file, and pick your own project idea.
--->
-
 ## Team Number
 
 05
@@ -18,8 +12,8 @@ Mini_Hermes
 
 | Name        | NetID  |
 | ----------- | ------ |
-| Jieyu Deng | ??? |
-| Renqing Liu | ??? |
+| Jieyu Deng | jd2256 |
+| Renqing Liu | rl1276 |
 | Tianwei Shi | ts1553 |
 | Younghoon Kim | yk816 |
 
