@@ -6,7 +6,7 @@
 
 ## Team Name
 
-Mini_Hermes
+Hermes Lab
 
 ## Team Members
 
@@ -19,7 +19,7 @@ Mini_Hermes
 
 ## Project Title
 
-Mini_Self-improving AI agent(mini_hermes)
+HermesLoop: A Privacy-Preserving Self-Improving AI Agent
 
 ## Abstract
 
