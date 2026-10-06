@@ -114,20 +114,48 @@ start, then pick your own project idea.
 
 ## What the abstract must cover
 
-Five things, inside 300 words. If you cannot explain the project in 300 words, you do
-not yet know what you are building.
+Seven things, inside 300 words. One sentence each covers 5 and 6, so they cost you
+little. If you cannot explain the project in 300 words, you do not yet know what you
+are building.
 
 1. **The problem.** What breaks today, who it hurts, and why it matters.
 2. **The architecture.** Your agents, what each one does, and how they coordinate.
 3. **The data and tools.** Name the data sources, APIs, and services, and confirm you
    can reach them.
-4. **The evaluation.** Name the metrics. Say what counts as working.
-5. **The biggest risk.** The one thing most likely to stop you finishing in eight
+4. **The evaluation.** Name the metrics, the baseline you run against, and where your
+   ground truth comes from. Say what counts as working.
+5. **The build.** Where the agents run, which models you use, and why those models.
+6. **The numbers you will measure.** Latency and cost for one unit of work. Pick the
+   unit: one report, one answered question, one document processed.
+7. **The biggest risk.** The one thing most likely to stop you finishing in eight
    weeks, and your plan for it.
 
-Most weak proposals fail on 3 and 5. A proposal comes back when the data source turns
+Most weak proposals fail on 3 and 7. A proposal comes back when the data source turns
 out to be unreachable, or when a risk sits in the middle of the design and nobody
-names it.
+names it. Naming a risk is half the job. We also want the plan.
+
+### What makes an evaluation credible
+
+Evaluations carry more weight than anything else you build, so say enough in the
+abstract for us to judge these five. Bring the detail to your first milestone.
+
+- **A baseline.** Something simpler than your system, run on the same test set. BM25,
+  a keyword filter, one prompt and no agents. Without a baseline, 73 percent means
+  nothing.
+- **Ground truth, and who made it.** Say how you produced the labels and how many you
+  produced. Hand-labeling 200 examples is real work, so budget for it.
+- **Metrics that measure what you claim.** Check this before you commit to one. Cosine
+  similarity between a document and its summary rewards copying the document, so it
+  tells you nothing about faithfulness. If you cannot say what a metric shows when your
+  system fails, pick a different metric.
+- **Sample size.** Report n beside every rate, with a confidence interval. Twenty
+  questions cannot separate 80 percent from 60 percent.
+- **A judge you checked.** If an LLM scores your output, score a sample yourself and
+  report how often you and the judge agree. Until you check it, you do not know what
+  its scores mean.
+
+We would rather read a project that measured an honest failure than one that claims
+success with no numbers behind it.
 
 ## How to submit
 
