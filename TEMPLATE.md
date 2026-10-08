@@ -35,11 +35,18 @@ the short login like ab1234 rather than your email address.
 ## Abstract
 
 <!--
-250 to 300 words, and no more than 300. Cover all five:
+250 to 300 words, and no more than 300. Cover all seven. One sentence each does
+for 5 and 6.
 
 1. The problem you solve and why it matters
 2. Your agent architecture: what the agents are and how they coordinate
 3. The data sources and external tools or APIs you will use
-4. How you will evaluate the system, and what you will measure
-5. The biggest risk to finishing in eight weeks, and your plan for it
+4. How you will evaluate the system: the metrics, the baseline you run against,
+   and where your ground truth comes from
+5. Where the agents run, which models you use, and why those models
+6. The latency and the cost you will measure for one unit of work
+7. The biggest risk to finishing in eight weeks, and your plan for it
+
+Read "What makes an evaluation credible" in README.md before you write 4. It
+carries more weight than anything else you build.
 -->
